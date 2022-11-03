@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+
+    <style>
+        #customAlert{
+            
+            position: fixed;
+            display: none;
+            background-color: rgba(255, 255, 255, 0.15);
+            
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            bottom: 0;
+
+        }
+
+        #box{
+            border-radius: 5px;
+            margin-top: 100px;
+            margin-left: 400px;
+            height: 150px;
+            width: 500px;
+            text-align: center;
+            box-shadow: 2px 2px 8px black;
+            background-color: salmon;
+            border-color: red;
+
+        }
+
+        #content{
+            margin-top: 30px;
+        }
+
+        #confirmbutton{
+            height: 25px;
+            width: 80px;
+            border-radius: 8px;
+            background-color: white;
+            color: black;
+            margin-top: 20px;
+            margin-left: 400px;
+        }
+
+    </style>
+
+    
+</head>
+<body>
+
+    <!--Diff of 2-->
+    <h4>Diff of 2</h4>
+    <script src="javaScript.js"></script>
+    <br>
+
+
+    <!--Area of Rectangle or Triangle-->
+    <input type="number" value="Submit" id="val1">
+    <br>
+    <input type="number" value="Submit" id="val2">
+    <br>
+    <button style="display: inline-block;" onclick="areaoftriangle()">Triangle</button>
+    <button style="display: inline-block;" onclick="areaofrectangle()">Rectangle</button>
+    <p id = "T">TRIANGLE AREA </p>
+    <p id = "R"> RECTANGLE AREA</p>
+
+
+
+
+    <!--BUBBLE SORT-->
+    <br>
+    <button  onclick="sortBubble()">BubbleSort</button>
+
+
+
+
+    <!--Form-->
+    <br>
+    <h4>FORM</h4>
+    <input placeholder="Enter your name" type="text" name="NAME" id="form_name">
+    <br><input placeholder="Enter your form_password" type="password" name="password" id="form_password">
+    <br><input placeholder="Enter your age" type="number" name="age" id="form_age">
+    <br>
+    <button onclick="validationcheck()">confirm</button>
+
+    <div id="customAlert">
+        <div id="box">
+            <div style="padding: 5px; background-color: red; color: white; font-size: larger;">ALERT</div>
+            <div class="content">
+                <p style="font-size: larger;"> KINDLY INPUT SOMETHING</p>
+                <button type="button" id="confirmbutton" onclick="confirmation()">OK</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <!--Tip Calculation-->
+    <br>
+    <br>
+    <h4>Tip Calculation</h4>
+    <input placeholder="Enter Amount for Tip Calculation" type="number" name="Total Amount" id="tip">
+    <br>
+    
+    <select name="Quality" id="quality1">
+
+        <option value="30">Outstanding</option>
+        <option value="20">Good</option>
+        <option value="15">OK</option>
+        <option value="10">Bad</option>
+        <option value="5">Terrible</option>
+    </select> 
+    
+    <!--<input placeholder="Enter Tiping Percent" type="number" name="" id="quality">-->
+    <button onclick="tipcalculator()"> Calculate Tip</button>
+
+    <p id="CalTip">The Total Tip</p>
+</body>
+</html>
